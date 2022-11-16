@@ -227,8 +227,9 @@ const CoinPage = () => {
             </Typography>
           </span>
           <span style={{ display: "flex" }}>
-              <a href={coin?.links.repos_url.github[0]} target="_blank" style={{"borderRadius": "8px", "padding": "10px 15px", "marginTop": "10px", "color": "white", "backgroundColor": "black", "marginRight": "10px"}}><i class="fa-brands fa-github"></i>{"  "} Github</a>
-              <a href={coin?.links.subreddit_url} target="_blank" style={{"borderRadius": "8px", "padding": "10px 15px", "marginTop": "10px", "color": "white", "backgroundColor": "#FF4500"}}><i class="fa-brands fa-square-reddit"></i>{"  "}Reddit</a>
+              <a href={coin?.links.repos_url.github[0]} target="_blank" style={{"borderRadius": "8px", "padding": "8px 15px", "marginTop": "10px", "color": "white", "backgroundColor": "black", "marginRight": "5px"}}><i class="fa-brands fa-github"></i>{"  "} Github</a>
+              <a href={coin?.links.subreddit_url} target="_blank" style={{"borderRadius": "8px", "padding": "8px 15px", "marginTop": "10px", "color": "white", "backgroundColor": "#FF4500"}}><i class="fa-brands fa-square-reddit"></i>{"  "}Reddit</a>
+              <a href={coin?.links.homepage[0]} target="_blank" style={{"borderRadius": "8px", "padding": "8px 15px", "marginTop": "10px", "marginLeft": "5px", "color": "white", "backgroundColor": "#FF4500"}}><i class="fa-solid fa-circle-check"></i>{"  "}Website</a>
           </span>
           <span style={{ display: "flex" }}>
               {/* <h3>{coin?.tickers[0].market.name}</h3>

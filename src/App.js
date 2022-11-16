@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import SignIn from "./components/SignIn";
 import {useAuthState} from "react-firebase-hooks/auth"
 import { auth } from './firebase';
+import CopyRight from "./components/CopyRight";
 
 const useStyles = makeStyles(() => ({
   App: {
@@ -25,8 +26,10 @@ function App() {
       <div className={classes.App}>
       {
         user? <Header user={user.photoURL}/> : <SignIn />
+      }
+      {
+        user?<Route path="/" component={Homepage} exact />: <CopyRight />
       } 
-        <Route path="/" component={Homepage} exact />
         <Route path="/coins/:id" component={CoinPage} exact />
       </div>
     </BrowserRouter>

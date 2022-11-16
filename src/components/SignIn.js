@@ -1,7 +1,6 @@
 import React from "react";
 import firebase from 'firebase/compat/app';
 import {auth} from "../firebase"
-import { Button } from "@material-ui/core";
 function SignIn() {
   function signInWithGoogle() {
     // console.log('clicked');
@@ -13,23 +12,28 @@ function SignIn() {
       style={{
         display: "flex",
         justifyContent: "center",
-        height: "100vh",
+        height: "95vh",
         alignItems: "center",
       }}
     >
-      <Button
+      <button
         style={{
-          padding: "30px",
-          fontSize: "20px",
+          padding: "10px 15px",
+          fontSize: "18px",
           borderRadius: "20px",
-          fontWeight: "600",
+          fontWeight: "500",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center"
         }}
         variant="contained"
         color="primary"
         onClick={signInWithGoogle}
       >
+        <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"  style={{"width": "35px", "marginRight": "5px"}}/>
         Login With Google
-      </Button>
+      </button>
     </div>
   );
 }
